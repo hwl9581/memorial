@@ -1,0 +1,1350 @@
+16:37:17.066 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+16:37:17.690 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+16:37:18.390 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1317 ms
+16:37:22.992 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+16:37:23.662 WARN  org.springframework.context.support.AbstractApplicationContext 558 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapper/*.xml]: class path resource [mapper/] cannot be resolved to URL because it does not exist
+16:37:23.663 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+16:37:23.669 ERROR org.springframework.web.context.ContextLoader 313 initWebApplicationContext - Context initialization failed org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapper/*.xml]: class path resource [mapper/] cannot be resolved to URL because it does not exist
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:860) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292) [spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103) [spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:890) [jetty-server-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:532) [jetty-servlet-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:853) [jetty-server-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:344) [jetty-servlet-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1515) [jetty-webapp-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.startWebapp(JettyWebAppContext.java:360) [jetty-maven-plugin-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1477) [jetty-webapp-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:785) [jetty-server-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261) [jetty-servlet-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:545) [jetty-webapp-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:428) [jetty-maven-plugin-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [jetty-util-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.maven.plugin.JettyRunMojo.restartWebApp(JettyRunMojo.java:541) [jetty-maven-plugin-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.maven.plugin.JettyRunMojo$1.onPathWatchEvents(JettyRunMojo.java:394) [jetty-maven-plugin-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.util.PathWatcher.notifyEvents(PathWatcher.java:1363) [jetty-util-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.util.PathWatcher.run(PathWatcher.java:1187) [jetty-util-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapper/*.xml]: class path resource [mapper/] cannot be resolved to URL because it does not exist
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertIfNecessary(AbstractNestablePropertyAccessor.java:595) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertForProperty(AbstractNestablePropertyAccessor.java:604) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:219) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1748) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1704) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	... 28 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapper/*.xml]: class path resource [mapper/] cannot be resolved to URL because it does not exist
+	at org.springframework.core.io.support.ResourceArrayPropertyEditor.setAsText(ResourceArrayPropertyEditor.java:120) ~[spring-core-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertIfNecessary(AbstractNestablePropertyAccessor.java:585) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertForProperty(AbstractNestablePropertyAccessor.java:604) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:219) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1748) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1704) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	... 28 more
+
+16:37:42.549 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+16:37:43.120 WARN  org.springframework.context.support.AbstractApplicationContext 558 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapper/*.xml]: class path resource [mapper/] cannot be resolved to URL because it does not exist
+16:37:43.121 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+16:37:43.129 ERROR org.springframework.web.context.ContextLoader 313 initWebApplicationContext - Context initialization failed org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapper/*.xml]: class path resource [mapper/] cannot be resolved to URL because it does not exist
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:860) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292) [spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103) [spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:890) [jetty-server-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:532) [jetty-servlet-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:853) [jetty-server-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:344) [jetty-servlet-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1515) [jetty-webapp-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.startWebapp(JettyWebAppContext.java:360) [jetty-maven-plugin-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1477) [jetty-webapp-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:785) [jetty-server-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261) [jetty-servlet-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:545) [jetty-webapp-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:428) [jetty-maven-plugin-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [jetty-util-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133) [jetty-util-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:115) [jetty-util-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113) [jetty-server-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:167) [jetty-server-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [jetty-util-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133) [jetty-util-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:115) [jetty-util-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113) [jetty-server-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [jetty-util-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133) [jetty-util-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.server.Server.start(Server.java:418) [jetty-server-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:107) [jetty-util-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113) [jetty-server-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:385) [jetty-server-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [jetty-util-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:461) [jetty-maven-plugin-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:327) [jetty-maven-plugin-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.maven.plugin.JettyRunMojo.execute(JettyRunMojo.java:183) [jetty-maven-plugin-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134) [maven-core-3.3.9.jar:3.3.9]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207) [maven-core-3.3.9.jar:3.3.9]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153) [maven-core-3.3.9.jar:3.3.9]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145) [maven-core-3.3.9.jar:3.3.9]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116) [maven-core-3.3.9.jar:3.3.9]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80) [maven-core-3.3.9.jar:3.3.9]
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51) [maven-core-3.3.9.jar:3.3.9]
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128) [maven-core-3.3.9.jar:3.3.9]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307) [maven-core-3.3.9.jar:3.3.9]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193) [maven-core-3.3.9.jar:3.3.9]
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106) [maven-core-3.3.9.jar:3.3.9]
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863) [maven-embedder-3.3.9.jar:3.3.9]
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288) [maven-embedder-3.3.9.jar:3.3.9]
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199) [maven-embedder-3.3.9.jar:3.3.9]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_161]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289) [plexus-classworlds-2.5.2.jar:?]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229) [plexus-classworlds-2.5.2.jar:?]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415) [plexus-classworlds-2.5.2.jar:?]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356) [plexus-classworlds-2.5.2.jar:?]
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:47) [plexus-classworlds-2.5.2.jar:?]
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapper/*.xml]: class path resource [mapper/] cannot be resolved to URL because it does not exist
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertIfNecessary(AbstractNestablePropertyAccessor.java:595) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertForProperty(AbstractNestablePropertyAccessor.java:604) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:219) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1748) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1704) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	... 64 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapper/*.xml]: class path resource [mapper/] cannot be resolved to URL because it does not exist
+	at org.springframework.core.io.support.ResourceArrayPropertyEditor.setAsText(ResourceArrayPropertyEditor.java:120) ~[spring-core-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertIfNecessary(AbstractNestablePropertyAccessor.java:585) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertForProperty(AbstractNestablePropertyAccessor.java:604) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:219) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1748) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1704) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	... 64 more
+
+16:37:55.838 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+16:37:56.296 WARN  org.springframework.context.support.AbstractApplicationContext 558 refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapper/*.xml]: class path resource [mapper/] cannot be resolved to URL because it does not exist
+16:37:56.297 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+16:37:56.302 ERROR org.springframework.web.context.ContextLoader 313 initWebApplicationContext - Context initialization failed org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext.xml]: Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapper/*.xml]: class path resource [mapper/] cannot be resolved to URL because it does not exist
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:860) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292) [spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103) [spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:890) [jetty-server-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:532) [jetty-servlet-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:853) [jetty-server-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:344) [jetty-servlet-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1515) [jetty-webapp-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.startWebapp(JettyWebAppContext.java:360) [jetty-maven-plugin-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1477) [jetty-webapp-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:785) [jetty-server-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261) [jetty-servlet-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:545) [jetty-webapp-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:428) [jetty-maven-plugin-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [jetty-util-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.maven.plugin.JettyRunMojo.restartWebApp(JettyRunMojo.java:541) [jetty-maven-plugin-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.maven.plugin.JettyRunMojo$1.onPathWatchEvents(JettyRunMojo.java:394) [jetty-maven-plugin-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.util.PathWatcher.notifyEvents(PathWatcher.java:1363) [jetty-util-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at org.eclipse.jetty.util.PathWatcher.run(PathWatcher.java:1187) [jetty-util-9.4.8.v20171121.jar:9.4.8.v20171121]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'java.lang.String' to required type 'org.springframework.core.io.Resource[]' for property 'mapperLocations'; nested exception is java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapper/*.xml]: class path resource [mapper/] cannot be resolved to URL because it does not exist
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertIfNecessary(AbstractNestablePropertyAccessor.java:595) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertForProperty(AbstractNestablePropertyAccessor.java:604) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:219) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1748) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1704) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	... 28 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve resource location pattern [classpath:mapper/*.xml]: class path resource [mapper/] cannot be resolved to URL because it does not exist
+	at org.springframework.core.io.support.ResourceArrayPropertyEditor.setAsText(ResourceArrayPropertyEditor.java:120) ~[spring-core-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertIfNecessary(AbstractNestablePropertyAccessor.java:585) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.convertForProperty(AbstractNestablePropertyAccessor.java:604) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:219) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1748) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1704) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1444) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	... 28 more
+
+16:38:22.082 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+16:38:22.918 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 830 ms
+16:38:23.022 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+16:38:23.329 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+16:38:23.854 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 832 ms
+16:38:29.107 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+16:38:30.123 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+16:38:30.876 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 748 ms
+16:38:30.928 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+16:38:31.206 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+16:38:31.677 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 749 ms
+16:44:26.216 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+16:44:27.035 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+16:44:27.561 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 522 ms
+16:44:27.611 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+16:44:27.863 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+16:44:28.406 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 795 ms
+16:54:39.662 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+16:54:40.465 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+16:54:40.975 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 505 ms
+16:54:41.025 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+16:54:41.316 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+16:54:41.938 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 912 ms
+16:59:08.562 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+16:59:09.386 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 817 ms
+16:59:09.475 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+16:59:09.783 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+16:59:10.313 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 838 ms
+16:59:18.620 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+16:59:19.772 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+16:59:20.367 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 587 ms
+16:59:20.415 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+16:59:20.867 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+16:59:21.384 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 968 ms
+16:59:51.577 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+16:59:52.426 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 844 ms
+16:59:52.508 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+16:59:52.858 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+16:59:53.446 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 938 ms
+16:59:57.630 WARN  org.springframework.web.servlet.DispatcherServlet 1251 noHandlerFound - No mapping for GET /memorial/static/layui/css/layui.css
+16:59:57.630 WARN  org.springframework.web.servlet.DispatcherServlet 1251 noHandlerFound - No mapping for GET /memorial/static/layui/layui.js
+16:59:58.350 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+16:59:59.508 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:00:00.088 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 575 ms
+17:00:00.139 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:00:00.429 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:00:00.903 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 764 ms
+17:00:01.444 WARN  org.springframework.web.servlet.DispatcherServlet 1251 noHandlerFound - No mapping for GET /memorial/static/layui/css/layui.css
+17:00:12.889 WARN  org.springframework.web.servlet.DispatcherServlet 1251 noHandlerFound - No mapping for GET /memorial/static/layui/layui.js
+17:01:41.898 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:01:42.890 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 987 ms
+17:01:42.972 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:01:43.322 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:01:43.940 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 967 ms
+17:01:46.280 WARN  org.springframework.web.servlet.DispatcherServlet 1251 noHandlerFound - No mapping for GET /memorial/static/layui/layui.js
+17:01:48.289 WARN  org.springframework.web.servlet.DispatcherServlet 1251 noHandlerFound - No mapping for GET /memorial/static/layui/layui.js
+17:01:48.993 WARN  org.springframework.web.servlet.DispatcherServlet 1251 noHandlerFound - No mapping for GET /memorial/static/layui/layui.js
+17:01:49.825 WARN  org.springframework.web.servlet.DispatcherServlet 1251 noHandlerFound - No mapping for GET /memorial/static/layui/layui.js
+17:02:17.824 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:02:18.652 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 823 ms
+17:02:18.724 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:02:19.068 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:02:19.614 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 889 ms
+17:02:23.247 WARN  org.springframework.web.servlet.DispatcherServlet 1251 noHandlerFound - No mapping for GET /memorial/static/layui/layui.js
+17:02:24.139 WARN  org.springframework.web.servlet.DispatcherServlet 1251 noHandlerFound - No mapping for GET /memorial/static/layui/layui.js
+17:02:24.826 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:02:25.893 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:02:26.669 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 770 ms
+17:02:26.726 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:02:27.017 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:02:27.500 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 774 ms
+17:02:51.197 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:02:52.014 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 811 ms
+17:02:52.101 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:02:52.447 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:02:57.381 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:02:58.221 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 835 ms
+17:02:58.297 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:02:58.615 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:02:59.155 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 858 ms
+17:03:02.906 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:03:03.948 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:03:04.719 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 765 ms
+17:03:04.770 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:03:05.082 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:03:05.604 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 834 ms
+17:03:07.426 WARN  org.springframework.web.servlet.DispatcherServlet 1251 noHandlerFound - No mapping for GET /memorial/static/layui/layui.js
+17:03:08.021 WARN  org.springframework.web.servlet.DispatcherServlet 1251 noHandlerFound - No mapping for GET /memorial/static/layui/layui.js
+17:03:08.517 WARN  org.springframework.web.servlet.DispatcherServlet 1251 noHandlerFound - No mapping for GET /memorial/static/layui/layui.js
+17:03:08.982 WARN  org.springframework.web.servlet.DispatcherServlet 1251 noHandlerFound - No mapping for GET /memorial/static/layui/layui.js
+17:03:26.696 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:03:27.509 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:03:28.056 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 541 ms
+17:03:28.102 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:03:28.395 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:03:28.937 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 835 ms
+17:03:35.647 WARN  org.springframework.web.servlet.DispatcherServlet 1251 noHandlerFound - No mapping for GET /memorial/static/layui/css/layui.css
+17:04:16.465 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:04:17.239 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 769 ms
+17:04:17.317 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:04:17.614 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:04:18.197 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 879 ms
+17:04:22.036 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:04:23.127 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:04:23.857 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 725 ms
+17:04:23.904 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:04:24.189 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:04:24.660 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 756 ms
+17:06:51.195 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:06:52.021 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 820 ms
+17:06:52.096 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:06:52.427 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:06:52.980 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 884 ms
+17:06:58.573 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:06:59.587 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:07:00.190 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 598 ms
+17:07:00.243 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:07:00.717 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:07:01.214 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 971 ms
+17:08:17.423 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:08:18.421 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:08:19.018 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 592 ms
+17:08:19.070 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:08:19.376 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:08:19.945 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 875 ms
+17:09:18.625 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:09:19.395 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 765 ms
+17:09:19.466 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:09:19.787 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:09:20.342 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 876 ms
+17:09:24.360 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:09:25.396 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:09:25.965 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 564 ms
+17:09:26.019 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:09:26.523 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:09:27.039 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1020 ms
+17:12:13.555 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:12:14.399 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 837 ms
+17:12:14.481 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:12:14.788 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:12:15.355 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 874 ms
+17:12:26.774 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:12:27.825 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:12:28.424 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 593 ms
+17:12:28.474 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:12:28.899 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:12:29.400 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 926 ms
+17:13:45.602 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:13:46.392 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 785 ms
+17:13:46.464 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:13:46.785 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:13:47.368 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 903 ms
+17:13:52.444 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:13:53.419 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:13:54.080 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 655 ms
+17:13:54.132 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:13:54.552 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:13:55.109 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 977 ms
+17:16:01.994 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:16:02.966 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 966 ms
+17:16:03.053 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:16:03.397 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:16:03.979 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 924 ms
+17:16:58.221 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:16:59.358 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:16:59.916 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 552 ms
+17:16:59.959 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:17:00.240 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:17:00.723 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 764 ms
+17:20:08.299 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:20:09.281 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:20:09.904 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 617 ms
+17:20:09.953 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:20:10.278 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:20:10.822 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 868 ms
+17:21:36.731 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:21:37.562 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:21:38.325 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 654 ms
+17:21:38.397 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:21:38.675 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:21:39.177 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 780 ms
+17:23:10.573 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:23:11.384 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:23:11.932 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 542 ms
+17:23:11.973 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:23:12.236 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:23:12.728 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 755 ms
+17:25:23.357 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:25:24.150 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 786 ms
+17:25:24.244 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:25:24.596 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:25:25.144 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 900 ms
+17:25:31.459 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:25:32.452 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:25:32.999 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 543 ms
+17:25:33.051 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:25:33.353 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:25:33.878 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 827 ms
+17:26:25.584 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:26:26.409 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 818 ms
+17:26:26.482 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:26:26.804 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:26:27.332 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 848 ms
+17:26:31.194 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:26:32.216 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:26:32.798 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 578 ms
+17:26:32.846 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:26:33.129 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:26:33.623 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 777 ms
+17:27:31.227 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:27:32.005 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:27:32.543 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 535 ms
+17:27:32.588 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:27:32.881 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:27:33.419 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 831 ms
+17:28:59.434 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:29:00.366 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:29:00.917 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 545 ms
+17:29:00.962 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:29:01.386 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:29:01.956 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 994 ms
+17:36:08.006 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:36:08.668 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:36:09.314 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 640 ms
+17:36:09.474 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:36:09.756 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:36:10.260 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 786 ms
+17:37:20.688 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:37:21.420 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:37:21.955 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 528 ms
+17:37:22.006 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:37:22.268 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:37:22.823 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 816 ms
+17:38:25.273 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:38:25.990 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 712 ms
+17:38:26.065 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:38:26.391 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:38:26.975 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 909 ms
+17:38:31.632 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:38:32.706 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:38:33.314 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 603 ms
+17:38:33.366 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:38:33.678 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:38:34.274 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 908 ms
+17:38:57.245 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:38:58.018 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:38:58.671 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 648 ms
+17:38:58.722 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:38:59.012 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:38:59.501 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 779 ms
+17:39:42.577 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:39:43.445 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:39:43.989 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 537 ms
+17:39:44.031 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:39:44.323 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:39:44.898 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 866 ms
+17:48:13.881 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:48:14.578 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:48:15.233 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 648 ms
+17:48:15.280 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:48:15.582 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:48:16.116 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 836 ms
+17:53:22.820 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:53:23.596 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:53:24.113 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 512 ms
+17:53:24.152 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:53:24.435 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:53:25.066 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 914 ms
+17:58:59.537 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+17:59:00.341 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+17:59:00.853 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 508 ms
+17:59:00.898 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+17:59:01.168 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+17:59:01.644 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 745 ms
+18:05:48.196 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:05:49.177 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:05:49.755 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 570 ms
+18:05:49.804 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:05:50.168 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:05:50.704 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 900 ms
+18:08:22.655 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:08:23.329 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:08:23.866 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 532 ms
+18:08:23.920 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:08:24.189 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:08:24.658 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 738 ms
+18:14:51.197 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:14:51.950 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:14:52.521 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 566 ms
+18:14:52.568 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:14:52.835 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:14:53.346 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 778 ms
+18:19:01.335 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:19:02.028 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:19:02.534 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 499 ms
+18:19:02.576 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:19:02.854 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:19:03.317 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 741 ms
+18:23:34.424 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:23:35.212 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:23:35.716 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 499 ms
+18:23:35.769 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:23:36.026 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:23:36.494 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 725 ms
+18:23:58.444 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:23:59.546 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:24:00.268 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 717 ms
+18:24:00.317 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:24:00.623 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:24:01.227 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 909 ms
+18:24:04.952 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:24:05.886 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:24:06.785 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 894 ms
+18:24:06.840 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:24:07.199 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:24:08.204 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1363 ms
+18:24:10.923 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:24:11.662 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:24:12.465 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 794 ms
+18:24:12.514 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:24:12.874 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:24:13.508 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 993 ms
+18:24:16.229 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:24:17.176 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:24:17.913 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 727 ms
+18:24:17.965 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:24:18.293 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:24:19.003 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1038 ms
+18:24:21.723 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:24:22.490 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:24:23.194 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 694 ms
+18:24:23.255 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:24:23.600 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:24:24.321 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1066 ms
+18:24:27.038 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:24:27.833 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:24:28.479 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 639 ms
+18:24:28.528 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:24:28.877 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:24:29.478 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 950 ms
+18:24:34.492 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:24:35.381 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:24:36.077 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 691 ms
+18:24:36.137 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:24:36.476 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:24:37.140 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1002 ms
+18:24:39.868 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:24:40.689 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:24:41.521 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 823 ms
+18:24:41.582 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:24:42.028 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:24:42.685 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1102 ms
+18:24:46.205 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:24:46.964 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:24:47.638 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 665 ms
+18:24:47.693 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:24:48.031 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:24:48.697 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1003 ms
+18:25:16.004 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:25:16.868 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:25:17.505 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 630 ms
+18:25:17.556 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:25:17.890 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:25:18.529 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 973 ms
+18:29:29.745 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:29:30.573 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:29:31.475 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 897 ms
+18:29:31.554 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:29:31.914 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:29:32.703 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1148 ms
+18:45:33.641 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:45:34.290 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:45:34.852 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 554 ms
+18:45:34.894 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:45:35.210 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:45:35.695 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 800 ms
+18:50:10.500 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:50:11.316 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:50:11.943 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 621 ms
+18:50:11.995 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:50:12.311 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:50:12.793 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 796 ms
+18:52:20.130 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:52:21.177 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 1040 ms
+18:52:21.252 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:52:21.567 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:52:22.161 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 909 ms
+18:54:11.763 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:54:12.771 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:54:13.522 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 746 ms
+18:54:13.573 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:54:13.898 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:54:14.461 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 888 ms
+18:54:49.413 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:54:50.469 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 1048 ms
+18:54:50.547 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:54:50.845 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:54:51.502 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 955 ms
+18:57:39.467 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+18:57:40.579 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+18:57:41.335 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 750 ms
+18:57:41.402 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+18:57:41.667 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+18:57:42.248 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 846 ms
+19:01:52.798 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+19:01:53.618 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:01:54.364 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 742 ms
+19:01:54.420 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:01:54.703 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:01:55.462 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1042 ms
+19:05:58.897 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+19:06:04.566 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:06:05.639 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 1067 ms
+19:06:05.730 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:06:06.036 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:06:06.657 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 927 ms
+19:07:31.818 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:07:31.827 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:07:31.857 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:07:31.903 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 0
+19:08:02.247 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closing ...
+19:08:02.253 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closed
+19:08:03.446 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:08:04.254 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 802 ms
+19:08:04.305 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:08:04.597 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:08:05.194 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 888 ms
+19:08:18.918 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:08:18.925 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:08:18.943 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:08:18.983 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 0
+19:10:10.319 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:10:10.320 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:10:10.349 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 0
+19:10:31.765 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closing ...
+19:10:31.768 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closed
+19:10:32.685 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:10:33.468 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 779 ms
+19:10:33.521 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:10:34.006 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:10:34.554 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1033 ms
+19:11:45.570 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+19:11:46.418 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:11:47.229 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 805 ms
+19:11:47.275 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:11:47.510 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:11:48.097 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 821 ms
+19:11:55.904 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:11:55.910 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:11:55.932 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:11:55.975 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 0
+19:12:55.654 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closing ...
+19:12:55.659 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closed
+19:12:56.456 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:12:57.214 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 752 ms
+19:12:57.268 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:12:57.535 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:12:58.056 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 788 ms
+19:13:09.145 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:13:09.155 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:13:09.176 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 231(String)
+19:13:09.219 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 0
+19:13:25.950 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:13:25.951 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:13:25.978 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 0
+19:18:49.626 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:18:49.627 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:18:49.655 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 0
+19:19:16.130 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:19:17.139 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 1001 ms
+19:19:17.225 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:19:17.542 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:19:18.213 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 988 ms
+19:19:24.048 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+19:19:25.053 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:19:25.733 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 675 ms
+19:19:25.789 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:19:26.041 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:19:26.607 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 817 ms
+19:19:37.881 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:19:37.891 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:19:37.922 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:19:37.971 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 0
+19:21:10.522 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:21:10.523 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:21:10.553 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+19:21:44.985 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closing ...
+19:21:44.988 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closed
+19:21:45.983 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:21:46.937 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 946 ms
+19:21:47.016 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:21:47.288 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:21:47.843 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 827 ms
+19:21:53.349 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:21:54.404 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 1050 ms
+19:21:54.481 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:21:54.803 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:21:55.307 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 825 ms
+19:22:01.242 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+19:22:02.526 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:22:03.287 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 756 ms
+19:22:03.337 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:22:03.610 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:22:04.003 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 665 ms
+19:22:08.956 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:22:08.965 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:22:08.995 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:22:09.044 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+19:23:26.665 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:23:27.920 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 1249 ms
+19:23:28.022 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:23:28.638 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:23:29.185 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 1163 ms
+19:23:34.656 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+19:23:36.020 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:23:36.883 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 857 ms
+19:23:36.946 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:23:37.294 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:23:37.849 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 903 ms
+19:23:42.022 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:23:42.033 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:23:42.063 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:23:42.113 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+19:26:11.638 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closing ...
+19:26:11.643 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closed
+19:26:12.712 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:26:13.591 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 873 ms
+19:26:13.646 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:26:14.005 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:26:14.416 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 770 ms
+19:26:53.713 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:26:54.675 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 957 ms
+19:26:54.769 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:26:55.071 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:26:55.599 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 830 ms
+19:27:02.557 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closing ...
+19:27:03.115 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:27:03.122 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closed
+19:27:04.108 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:27:04.943 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 829 ms
+19:27:04.998 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:27:05.274 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:27:05.679 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 681 ms
+19:27:14.402 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:27:14.409 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:27:14.435 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:27:14.482 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+19:28:23.839 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closing ...
+19:28:23.843 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closed
+19:28:24.694 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:28:25.444 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 742 ms
+19:28:25.502 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:28:25.765 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:28:26.343 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 839 ms
+19:32:50.252 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:32:51.183 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 926 ms
+19:32:51.259 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:32:51.562 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:32:51.967 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 708 ms
+19:32:58.002 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+19:32:59.099 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:32:59.897 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 792 ms
+19:32:59.950 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:33:00.205 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:33:00.605 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 654 ms
+19:33:05.470 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:33:05.479 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:33:05.507 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:33:05.553 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+19:33:05.650 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:33:05.651 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:33:05.680 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+19:37:21.781 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closing ...
+19:37:21.792 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closed
+19:37:22.710 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:37:23.450 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 734 ms
+19:37:23.508 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:37:23.786 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:37:24.237 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 729 ms
+19:37:59.013 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+19:38:00.019 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:38:00.854 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 829 ms
+19:38:00.910 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:38:01.221 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:38:01.723 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 813 ms
+19:41:54.099 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:41:55.203 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 1098 ms
+19:41:55.288 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:41:55.594 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:41:56.026 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 737 ms
+19:42:02.284 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+19:42:03.334 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:42:04.079 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 738 ms
+19:42:04.134 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:42:04.397 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:42:04.806 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 671 ms
+19:42:09.169 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:42:09.176 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:42:09.203 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:42:09.248 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+19:43:24.967 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closing ...
+19:43:24.972 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closed
+19:43:25.980 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:43:26.678 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 690 ms
+19:43:26.734 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:43:26.977 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:43:27.463 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 728 ms
+19:43:35.986 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:43:35.992 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:43:36.013 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:43:36.054 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+19:45:38.047 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:45:38.991 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 938 ms
+19:45:39.066 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:45:39.377 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:45:39.801 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 733 ms
+19:45:48.952 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+19:45:49.882 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:45:50.552 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 666 ms
+19:45:50.603 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:45:50.856 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:45:51.315 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 711 ms
+19:45:56.947 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:45:56.957 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:45:56.984 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:45:57.033 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+19:49:35.457 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:49:36.408 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 946 ms
+19:49:36.491 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:49:36.800 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:49:37.230 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 739 ms
+19:49:42.446 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+19:49:43.442 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:49:44.424 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 974 ms
+19:49:44.481 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:49:44.785 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:49:45.217 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 736 ms
+19:49:54.075 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:49:54.084 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+19:49:54.112 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+19:49:54.161 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+19:55:10.347 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+19:55:11.291 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 937 ms
+19:55:11.366 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+19:55:11.664 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+19:55:12.108 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 742 ms
+20:03:28.620 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+20:03:29.541 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+20:03:30.460 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 914 ms
+20:03:30.516 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+20:03:30.784 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+20:03:31.136 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 619 ms
+20:03:39.658 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+20:03:39.670 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+20:03:39.696 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 231(String)
+20:03:39.741 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 0
+20:03:47.391 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+20:03:47.392 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+20:03:47.425 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+20:05:35.398 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closing ...
+20:05:35.402 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closed
+20:05:36.320 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+20:05:37.062 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 733 ms
+20:05:37.121 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+20:05:37.425 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+20:05:37.854 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 733 ms
+20:05:46.880 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+20:05:46.888 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+20:05:46.917 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 233(String)
+20:05:46.957 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 0
+20:07:17.205 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closing ...
+20:07:17.209 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closed
+20:07:17.905 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+20:07:18.601 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 691 ms
+20:07:18.649 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+20:07:18.924 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+20:07:19.564 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 915 ms
+20:07:26.902 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+20:07:26.910 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+20:07:26.930 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 5545(String)
+20:07:26.969 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 0
+20:07:31.017 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+20:07:31.018 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+20:07:31.048 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+20:09:29.783 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+20:09:29.783 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+20:09:29.811 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+20:10:16.660 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+20:10:17.516 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 851 ms
+20:10:17.594 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+20:10:17.885 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+20:10:18.264 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 669 ms
+20:10:30.401 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+20:10:30.413 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+20:10:30.444 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+20:10:30.492 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+20:34:56.628 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closing ...
+20:34:56.633 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closed
+20:34:57.714 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+20:34:58.494 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 773 ms
+20:34:58.600 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+20:34:58.861 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+20:34:59.223 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 622 ms
+20:36:07.629 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+20:36:08.627 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 993 ms
+20:36:08.702 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+20:36:08.999 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+20:36:09.422 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 720 ms
+20:36:22.911 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+20:36:23.987 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+20:36:24.687 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 693 ms
+20:36:24.738 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+20:36:25.185 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+20:36:25.533 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 795 ms
+20:36:33.882 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+20:36:33.893 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+20:36:33.920 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+20:36:33.971 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+21:29:28.884 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closing ...
+21:29:28.887 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} closed
+21:29:29.839 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+21:29:30.688 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 843 ms
+21:29:30.733 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+21:29:30.990 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+21:29:31.386 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 653 ms
+21:34:18.191 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+21:34:18.942 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+21:34:19.829 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 883 ms
+21:34:19.874 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+21:34:20.126 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+21:34:20.532 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 658 ms
+21:37:20.464 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+21:37:21.226 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+21:37:21.898 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 668 ms
+21:37:21.948 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+21:37:22.218 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+21:37:22.551 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 603 ms
+21:37:32.268 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+21:37:32.946 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+21:37:33.644 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 693 ms
+21:37:33.684 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+21:37:33.924 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+21:37:34.258 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 574 ms
+21:38:14.651 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+21:38:15.500 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+21:38:16.268 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 762 ms
+21:38:16.309 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+21:38:16.595 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+21:38:16.969 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 660 ms
+21:43:11.086 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+21:43:11.866 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+21:43:12.743 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 872 ms
+21:43:12.791 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+21:43:13.291 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+21:43:13.631 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 840 ms
+21:47:26.762 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+21:47:27.419 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+21:47:28.114 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 690 ms
+21:47:28.156 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+21:47:28.400 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+21:47:28.703 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 547 ms
+21:52:01.008 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+21:52:01.862 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+21:52:02.537 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 669 ms
+21:52:02.592 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+21:52:02.842 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+21:52:03.188 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 596 ms
+21:56:32.804 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+21:56:33.479 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+21:56:34.219 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 731 ms
+21:56:34.257 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+21:56:34.497 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+21:56:34.813 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 556 ms
+21:59:31.116 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+21:59:32.004 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 883 ms
+21:59:32.093 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+21:59:32.399 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+21:59:32.825 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 732 ms
+22:01:15.538 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:01:16.478 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:01:17.258 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 775 ms
+22:01:17.310 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:01:17.568 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:01:18.022 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 712 ms
+22:05:18.463 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:05:19.232 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:05:19.931 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 694 ms
+22:05:19.976 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:05:20.218 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:05:20.579 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 603 ms
+22:09:46.822 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:09:47.575 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:09:48.519 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 937 ms
+22:09:48.562 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:09:48.819 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:09:49.187 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 625 ms
+22:13:51.873 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:13:52.816 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:13:53.567 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 744 ms
+22:13:53.620 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:13:53.896 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:13:54.329 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 708 ms
+22:16:29.592 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:16:30.701 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 1103 ms
+22:16:30.784 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:16:31.143 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:16:31.690 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 906 ms
+22:17:05.941 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:17:07.027 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 1081 ms
+22:17:07.105 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:17:07.422 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:17:07.898 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 793 ms
+22:17:13.020 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:17:14.168 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:17:14.960 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 788 ms
+22:17:15.016 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:17:15.292 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:17:15.681 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 665 ms
+22:18:56.778 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:18:57.518 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:18:58.250 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 726 ms
+22:18:58.296 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:18:58.566 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:18:58.944 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 648 ms
+22:19:23.637 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:19:24.318 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:19:24.955 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 631 ms
+22:19:25.004 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:19:25.423 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:19:25.822 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 818 ms
+22:20:31.100 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:20:31.877 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:20:32.672 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 790 ms
+22:20:32.727 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:20:32.988 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:20:33.331 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 603 ms
+22:21:24.424 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:21:25.114 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:21:25.882 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 763 ms
+22:21:25.939 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:21:26.189 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:21:26.569 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 630 ms
+22:24:58.359 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:24:59.371 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 1008 ms
+22:24:59.443 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:24:59.720 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:25:00.101 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 657 ms
+22:25:07.814 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:25:08.876 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:25:09.584 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 701 ms
+22:25:09.629 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:25:09.888 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:25:10.237 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 608 ms
+22:26:13.069 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:26:13.859 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:26:14.536 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 672 ms
+22:26:14.581 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:26:14.826 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:26:15.170 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 588 ms
+22:27:40.439 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:27:41.588 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 1140 ms
+22:27:41.667 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:27:41.942 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:27:42.400 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 733 ms
+22:28:30.588 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:28:31.567 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 974 ms
+22:28:31.639 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:28:31.932 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:28:32.376 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 737 ms
+22:28:37.385 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:28:38.561 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:28:39.261 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 694 ms
+22:28:39.332 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:28:39.624 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:28:40.002 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 669 ms
+22:31:04.792 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:31:05.797 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 999 ms
+22:31:05.872 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:31:06.170 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:31:06.567 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 694 ms
+22:31:10.024 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:31:11.119 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:31:11.905 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 780 ms
+22:31:11.965 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:31:12.434 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:31:12.800 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 834 ms
+22:33:09.819 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:33:10.615 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:33:11.372 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 753 ms
+22:33:11.413 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:33:11.736 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:33:12.094 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 681 ms
+22:34:18.994 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:34:19.743 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:34:20.404 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 655 ms
+22:34:20.449 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:34:20.854 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:34:21.164 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 714 ms
+22:37:18.177 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:37:19.017 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:37:20.026 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 1003 ms
+22:37:20.094 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:37:20.406 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:37:20.909 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 815 ms
+22:38:00.829 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:38:01.466 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:38:02.171 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 699 ms
+22:38:02.212 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:38:02.445 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:38:02.797 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 585 ms
+22:38:55.240 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:38:55.944 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:38:56.683 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 734 ms
+22:38:56.734 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:38:56.980 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:38:57.319 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 584 ms
+22:39:05.333 WARN  org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver 199 logException - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors
+Field error in object 'thing' on field 'endTime': rejected value [2019-09-02 00:00:00]; codes [typeMismatch.thing.endTime,typeMismatch.endTime,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [thing.endTime,endTime]; arguments []; default message [endTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'endTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [java.util.Date] for value '2019-09-02 00:00:00'; nested exception is java.lang.IllegalArgumentException]
+Field error in object 'thing' on field 'startTime': rejected value [2019-09-01 00:00:00]; codes [typeMismatch.thing.startTime,typeMismatch.startTime,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [thing.startTime,startTime]; arguments []; default message [startTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'startTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [java.util.Date] for value '2019-09-01 00:00:00'; nested exception is java.lang.IllegalArgumentException]]
+22:43:13.783 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:43:14.448 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:43:15.144 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 690 ms
+22:43:15.192 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:43:15.441 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:43:15.825 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 632 ms
+22:43:23.792 WARN  org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver 199 logException - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors
+Field error in object 'thing' on field 'endTime': rejected value [2019-09-02 00:00:00]; codes [typeMismatch.thing.endTime,typeMismatch.endTime,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [thing.endTime,endTime]; arguments []; default message [endTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'endTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [java.util.Date] for value '2019-09-02 00:00:00'; nested exception is java.lang.IllegalArgumentException]
+Field error in object 'thing' on field 'startTime': rejected value [2019-09-01 00:00:00]; codes [typeMismatch.thing.startTime,typeMismatch.startTime,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [thing.startTime,startTime]; arguments []; default message [startTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'startTime'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [java.util.Date] for value '2019-09-01 00:00:00'; nested exception is java.lang.IllegalArgumentException]]
+22:48:32.964 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+22:48:33.919 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:48:34.677 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 753 ms
+22:48:34.737 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:48:34.996 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:48:35.295 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 558 ms
+22:50:35.848 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+22:50:36.773 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 920 ms
+22:50:36.846 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+22:50:37.141 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+22:50:37.526 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 679 ms
+23:04:26.258 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+23:04:27.237 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+23:04:27.923 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 681 ms
+23:04:27.979 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+23:04:28.293 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+23:04:28.645 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 666 ms
+23:08:35.735 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+23:08:36.516 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+23:08:37.246 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 725 ms
+23:08:37.304 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+23:08:37.738 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+23:08:38.091 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 787 ms
+23:09:19.922 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+23:09:20.848 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 921 ms
+23:09:20.930 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+23:09:21.256 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+23:09:21.705 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 774 ms
+23:09:25.942 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+23:09:26.929 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+23:09:27.661 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 727 ms
+23:09:27.705 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+23:09:27.974 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+23:09:28.344 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 638 ms
+23:09:38.732 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+23:09:38.741 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: insert into things(thing_name, thing_detail, start_time, end_time, state, user_id) values (?, ?, ?, ?, ?, ?) 
+23:14:59.700 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+23:15:00.687 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 980 ms
+23:15:00.815 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+23:15:01.363 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+23:15:01.804 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 989 ms
+23:15:18.142 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-0} closing ...
+23:15:19.000 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+23:15:19.890 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 884 ms
+23:15:19.936 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+23:15:20.212 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+23:15:20.552 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 616 ms
+23:15:27.574 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+23:15:28.509 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 929 ms
+23:15:28.601 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+23:15:28.928 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+23:15:29.342 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 741 ms
+23:15:47.073 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+23:15:47.082 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+23:15:47.109 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+23:15:47.159 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:15:54.531 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? 
+23:15:54.532 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String)
+23:15:54.560 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:15:54.562 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: insert into things(thing_name, thing_detail, start_time, end_time, state, user_id) values (?, ?, ?, ?, ?, ?) 
+23:15:54.566 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String), 2019-09-01 00:00:00.0(Timestamp), 2019-09-02 00:00:00.0(Timestamp), 1(Integer), 1(Long)
+23:15:54.625 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==    Updates: 1
+23:18:38.349 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+23:18:39.370 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 1015 ms
+23:18:39.452 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+23:18:39.770 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+23:18:40.207 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 754 ms
+23:28:50.059 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+23:28:51.052 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 988 ms
+23:28:51.142 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+23:28:51.465 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+23:28:51.964 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 822 ms
+23:29:03.206 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+23:29:03.218 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+23:29:03.254 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+23:29:03.306 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:29:29.561 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? 
+23:29:29.561 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String)
+23:29:29.588 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:29:29.589 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: insert into things(thing_name, thing_detail, start_time, end_time, state, user_id) values (?, ?, ?, ?, ?, ?) 
+23:29:29.594 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 明天起来打王者(String), 明天起来打王者(String), 2020-04-15 02:03:02.0(Timestamp), 2020-04-24 00:05:04.0(Timestamp), 1(Integer), 1(Long)
+23:29:29.652 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==    Updates: 1
+23:30:05.863 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+23:30:06.790 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 922 ms
+23:30:06.861 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+23:30:07.162 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+23:30:07.589 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 727 ms
+23:30:21.322 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+23:30:21.333 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? and password = ? 
+23:30:21.366 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String)
+23:30:21.412 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:30:45.717 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? 
+23:30:45.718 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String)
+23:30:45.744 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:30:45.745 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: insert into things(thing_name, thing_detail, start_time, end_time, state, user_id) values (?, ?, ?, ?, ?, ?) 
+23:30:45.749 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 明天起来干啥啥(String), 明天起来干啥啥(String), 2020-04-21 00:03:03.0(Timestamp), 2020-04-28 04:05:03.0(Timestamp), 1(Integer), 1(Long)
+23:30:45.806 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==    Updates: 1
+23:31:16.008 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? 
+23:31:16.008 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String)
+23:31:16.034 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:31:16.035 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: insert into things(thing_name, thing_detail, start_time, end_time, state, user_id) values (?, ?, ?, ?, ?, ?) 
+23:31:16.036 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String), 2020-04-30 00:00:00.0(Timestamp), 2020-04-30 00:00:00.0(Timestamp), 1(Integer), 1(Long)
+23:31:16.092 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==    Updates: 1
+23:31:45.591 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from user where username=? 
+23:31:45.592 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String)
+23:31:45.617 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:31:45.618 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: insert into things(thing_name, thing_detail, start_time, end_time, state, user_id) values (?, ?, ?, ?, ?, ?) 
+23:31:45.619 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 123(String), 123(String), 2020-04-30 00:00:00.0(Timestamp), 2020-04-30 00:00:00.0(Timestamp), 1(Integer), 1(Long)
+23:31:45.675 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==    Updates: 1
+23:42:43.304 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+23:42:44.261 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 951 ms
+23:42:44.344 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+23:42:44.685 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+23:42:45.118 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 774 ms
+23:42:53.200 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+23:42:53.211 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: SELECT count(0) FROM things 
+23:42:53.240 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 
+23:42:53.283 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:42:53.288 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from things LIMIT ? 
+23:42:53.289 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 10(Integer)
+23:43:14.522 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: SELECT count(0) FROM things 
+23:43:14.523 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 
+23:43:14.550 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:43:14.552 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from things LIMIT ? 
+23:43:14.553 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 10(Integer)
+23:45:15.098 INFO  org.springframework.web.context.ContextLoader 271 initWebApplicationContext - Root WebApplicationContext: initialization started
+23:45:16.103 INFO  org.springframework.web.context.ContextLoader 307 initWebApplicationContext - Root WebApplicationContext initialized in 1000 ms
+23:45:16.185 INFO  org.springframework.web.servlet.FrameworkServlet 525 initServletBean - Initializing Servlet 'DispatcherServlet'
+23:45:16.500 INFO  org.hibernate.validator.internal.util.Version 21 <clinit> - HV000001: Hibernate Validator 6.1.2.Final
+23:45:16.912 INFO  org.springframework.web.servlet.FrameworkServlet 547 initServletBean - Completed initialization in 727 ms
+23:45:25.397 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+23:45:25.406 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: SELECT count(0) FROM things 
+23:45:25.406 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: SELECT count(0) FROM things 
+23:45:25.435 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 
+23:45:25.435 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 
+23:45:25.527 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:45:25.527 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:45:25.532 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from things LIMIT ? 
+23:45:25.532 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from things LIMIT ? 
+23:45:25.533 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 10(Integer)
+23:45:25.533 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 10(Integer)
+23:45:25.564 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 5
+23:45:25.565 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 5
+23:47:09.009 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: SELECT count(0) FROM things 
+23:47:09.010 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 
+23:47:09.037 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:47:09.038 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from things LIMIT ? 
+23:47:09.038 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 10(Integer)
+23:47:09.066 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 5
+23:47:20.604 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: SELECT count(0) FROM things 
+23:47:20.605 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 
+23:47:20.633 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:47:20.634 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from things LIMIT ? 
+23:47:20.635 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 20(Integer)
+23:47:20.665 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 5
+23:47:25.871 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: SELECT count(0) FROM things 
+23:47:25.872 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 
+23:47:25.899 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:47:25.900 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from things LIMIT ? 
+23:47:25.901 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 10(Integer)
+23:47:25.930 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 5
+23:47:44.882 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: SELECT count(0) FROM things 
+23:47:44.883 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 
+23:47:44.910 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:47:44.911 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from things LIMIT ? 
+23:47:44.911 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 10(Integer)
+23:47:44.940 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 5
+23:47:51.126 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: SELECT count(0) FROM things 
+23:47:51.126 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 
+23:47:51.153 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:47:51.154 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from things LIMIT ? 
+23:47:51.155 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 10(Integer)
+23:47:51.182 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 5
+23:50:24.141 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: SELECT count(0) FROM things 
+23:50:24.142 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 
+23:50:24.171 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:50:24.172 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from things LIMIT ? 
+23:50:24.173 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 10(Integer)
+23:50:24.201 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 5
+23:51:05.513 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: SELECT count(0) FROM things 
+23:51:05.514 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 
+23:51:05.543 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:51:05.544 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from things LIMIT ? 
+23:51:05.544 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 10(Integer)
+23:51:05.571 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 5
+23:51:26.302 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: SELECT count(0) FROM things 
+23:51:26.303 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 
+23:51:26.329 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:51:26.330 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from things LIMIT ? 
+23:51:26.330 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 10(Integer)
+23:51:26.358 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 5
+23:51:57.336 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: SELECT count(0) FROM things 
+23:51:57.336 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 
+23:51:57.363 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:51:57.364 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from things LIMIT ? 
+23:51:57.365 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 10(Integer)
+23:51:57.393 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 5
+23:58:14.789 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: SELECT count(0) FROM things 
+23:58:14.790 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 
+23:58:14.816 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:58:14.817 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from things LIMIT ? 
+23:58:14.817 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 10(Integer)
+23:58:14.847 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 5
+23:58:45.582 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: SELECT count(0) FROM things 
+23:58:45.583 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 
+23:58:45.612 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:58:45.613 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from things LIMIT ? 
+23:58:45.613 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 10(Integer)
+23:58:45.640 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 5
+23:59:36.069 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: SELECT count(0) FROM things 
+23:59:36.070 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 
+23:59:36.098 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 1
+23:59:36.100 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==>  Preparing: select * from things LIMIT ? 
+23:59:36.101 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - ==> Parameters: 10(Integer)
+23:59:36.129 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger 143 debug - <==      Total: 5

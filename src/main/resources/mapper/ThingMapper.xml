@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.han.mapper.ThingMapper">
+
+    <insert id="insert">
+        insert into
+        things(thing_name, thing_detail, start_time, end_time, state, user_id)
+        values
+        (#{thingName}, #{thingDetail}, #{startTime}, #{endTime}, #{state}, #{userId})
+    </insert>
+
+    <select id="selectAll" resultType="Thing" >
+        select * from things
+    </select>
+
+
+    <delete id="delete">
+        delete from things where id = #{id}
+    </delete>
+
+    <update id="update">
+        update
+        things
+        set thing_name = #{thingName}, thing_detail = #{thingDetail}, start_time = #{startTime}, end_time = #{endTime}, user_id = #{userId}, state = #{state}
+        where
+        id = #{id}
+    </update>
+
+</mapper>
